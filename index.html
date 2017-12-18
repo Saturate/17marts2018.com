@@ -1,1 +1,441 @@
-🎉
+<!doctype html>
+<html lang="da-dk">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Mathilde &amp; Daniel's bryllup</title>
+        <meta name="description" content="Mathilde & Daniel's bryllup, information og sted.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel|Oswald:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.css" />
+        
+        <style>
+            body {
+                background: #fcf3dd url('/handmadepaper.png');
+                font-family: 'Oswald', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                text-align: center;
+            }
+            h1 {
+                text-transform: uppercase;
+            }
+            .lovers {
+                font-family: 'Lovers Quarrel', cursive;
+                text-transform: inherit;
+                font-size: 120px;
+                font-weight: 100;
+                margin-top: 30px;
+            }
+
+            @media (max-width: 900px) {
+                .lovers {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .lovers__and {
+                font-size: 78px;
+                margin-top: -60px;
+                /* display: inline-block; */
+                position: relative;
+                top: -9px;
+                left: 3px;
+            }
+
+            @media (max-width: 900px) {
+                .lovers__and {
+                    position: static;
+                    display: block;
+                    margin: -37px 0;
+                    font-size: 70px;
+                }
+            }
+        
+            .wishes ul {
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                list-style-position: inside;
+            }
+            .wishes li {
+                list-style: none;
+            }
+            .wishes li:before {
+                content: '';
+                display: inline-block;
+                height: 16px;
+                width: 24px;
+                background: no-repeat url('/blomst.svg');
+            }
+            @media (min-width: 1300px) {
+                ul {
+                    columns: 2;
+                    -webkit-columns: 2;
+                    -moz-columns: 2;
+                }
+            }
+
+            a,
+            a:link {
+                color: #000;
+                text-decoration: none
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #000;
+            }
+        
+            /* */
+            
+            .flex-container {
+                border-top: 1px solid #e1d4b7;
+                border-bottom: 1px solid #e1d4b7;
+
+                max-width: 1500px;
+                margin: 0 auto;
+        
+                text-align: left;
+                padding: 20px 0;
+        
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-flex-wrap: nowrap;
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                -webkit-justify-content: flex-start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-align-content: stretch;
+                -ms-flex-line-pack: stretch;
+                align-content: stretch;
+            }
+            @media (min-width: 900px) {
+                .flex-container {
+                    -webkit-flex-direction: row;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                }
+                .wishes {
+                    border-left: 1px solid #e1d4b7;
+                    border-right: 1px solid #e1d4b7;
+                }
+            }
+        
+            .between {
+                text-transform: uppercase;
+                margin-top: 3em;
+            }
+        
+            .flex-container h1 {
+                margin-top: 0; 
+            }
+        
+            .place {
+                padding: 10px 40px;
+        
+                -webkit-order: 0;
+                -ms-flex-order: 0;
+                order: 0;
+                -webkit-flex: 1 1 auto;
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                -webkit-align-self: auto;
+                -ms-flex-item-align: auto;
+                align-self: auto;
+                }
+        
+            .wishes {
+                padding: 10px 40px;
+        
+                -webkit-order: 0;
+                -ms-flex-order: 0;
+                order: 0;
+                -webkit-flex: 1 0 auto;
+                -ms-flex: 1 0 auto;
+                flex: 1 0 auto;
+                -webkit-align-self: auto;
+                -ms-flex-item-align: auto;
+                align-self: auto;
+            }
+            @media (max-width: 900px) {
+                .wishes {
+                    border-top: 1px solid #e1d4b7;
+                }
+            }
+        
+            .info {
+                padding: 10px 40px;
+        
+                -webkit-order: 0;
+                -ms-flex-order: 0;
+                order: 0;
+                -webkit-flex: 1 1 auto;
+                -ms-flex: 1 1 auto;
+                flex: 1 1 auto;
+                -webkit-align-self: auto;
+                -ms-flex-item-align: auto;
+                align-self: auto;
+            }
+            @media (max-width: 900px) {
+                .info {
+                    border-top: 1px solid #e1d4b7;
+                }
+            }
+
+
+            @media (max-width: 900px) {
+                .flex-container {
+                    padding: 0;
+                }
+                .info, .wishes, .place {
+                    padding: 30px 40px;
+                }
+            }
+
+
+            .thanksnote {
+                padding: 20px 40px;
+            }
+        
+        
+            /* Clock */
+            .flip-clock-wrapper {
+                /* text-align: center; */
+                /* position: relative; */
+                /* width: 100%; */
+                margin: 0 auto;
+                max-width: 810px;
+                margin-top: 8em;
+            }
+            .flip-clock-wrapper .flip {
+                box-shadow: 0 2px 1px rgba(0,0,0,0.4);
+            }
+            .flip-clock-wrapper ul {
+                background: none;
+                float: none;
+                display: inline-block;
+                margin: 40px 5px 5px 5px;
+            }
+            .flip-clock-label {
+                font-family: 'Oswald', sans-serif;
+                /*font-size: 40px;*/
+                text-transform: uppercase;
+            }
+            .flip-clock-dot {
+                display: none;
+            }
+            .flip-clock-divider {
+                width: 60px;
+                float: none;
+            }
+
+            @media (max-width: 900px) {
+                .countdown {
+                    display: none;
+                }
+                #mobilecountdown {
+                    margin: 2em 0 -38px;
+                }
+            }
+
+            @media (min-width: 900px) {
+                .countdown {
+
+                }
+                #mobilecountdown {
+                    display: none;
+                }
+            }
+
+            .flip-clock-wrapper ul li a div div.inn,
+            .flip-clock-wrapper ul {
+                border-radius: 15px;
+            }
+
+            .flip-clock-wrapper ul li a div div.inn {
+                background: #e5d9bb;
+                color: #573d32;
+                text-shadow: 0 1px 0px #000;
+            }
+
+            .flip-clock-wrapper ul li a div.up {
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+            }
+
+            .flip-clock-wrapper ul li a div.down {
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            .flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+                background: -moz-linear-gradient(top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(145, 132, 95, 0.4)),color-stop(100%,rgba(0,0,0,0.1)));
+                background: linear,top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%;
+                background: -o-linear-gradient(top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%);
+                background: -ms-linear-gradient(top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%);
+                background: linear,to bottom,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%;
+                -webkit-animation: show .5s linear both;
+                -moz-animation: show .5s linear both;
+            }
+            .flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+                background: -moz-linear-gradient(top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0.1)),color-stop(100%,rgba(145, 132, 95, 0.4)));
+                background: linear,top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%;
+                background: -o-linear-gradient(top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%);
+                background: -ms-linear-gradient(top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%);
+                background: linear,to bottom,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%;
+                -webkit-animation: show .5s linear both;
+                -moz-animation: show .5s linear both;
+                animation: show .5s linear both;
+            }
+
+            .flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+                background: -moz-linear-gradient(top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(145, 132, 95, 0.4)),color-stop(100%,rgba(0,0,0,0.1)));
+                background: linear,top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%;
+                background: -o-linear-gradient(top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%);
+                background: -ms-linear-gradient(top,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%);
+                background: linear,to bottom,rgba(145, 132, 95, 0.4) 0,rgba(0,0,0,0.1) 100%;
+                -webkit-animation: hide .5s .3s linear both;
+                -moz-animation: hide .5s .3s linear both;
+                animation: hide .5s .2s linear both;
+            }
+
+            .flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+                background: -moz-linear-gradient(top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%);
+                background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,0.1)),color-stop(100%,rgba(145, 132, 95, 0.4)));
+                background: linear,top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%;
+                background: -o-linear-gradient(top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%);
+                background: -ms-linear-gradient(top,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%);
+                background: linear,to bottom,rgba(0,0,0,0.1) 0,rgba(145, 132, 95, 0.4) 100%;
+                -webkit-animation: hide .5s .3s linear both;
+                -moz-animation: hide .5s .3s linear both;
+                animation: hide .5s .3s linear both;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="countdown"></div>
+        <div id="mobilecountdown"><strong>0</strong> dage <strong>0</strong> timer <strong>0</strong> minutter <strong>0</strong> sekunder </div>
+        
+        <p class="between">Til bryllup mellem</p>
+
+        <h1 class="lovers">Mathilde <span class="lovers__and">&</span> Daniel</h1>
+
+<div class="flex-container">
+    <section class="place">
+        <h1>STED</h1>
+        Vielse i Skt. Jakobs Kirke <br />
+        kl. 13:00,<br />
+        Østerbrogade 59, KBH. Ø.<br /><br />
+    
+        Middag på restaurant <a target="_blank" href="https://goo.gl/maps/kTLQmKxw46K2">Charlottenlund Fort, <br />
+        Strandvejen 150, 2920 Charlottenlund</a><br />
+        fra kl. 17:00
+    </section>
+    
+    <section class="wishes">
+        <h1>Ønsker</h1>
+    
+        <ul>
+            <li><a target="_blank" href="https://moodings.com">Ball lampe fra House doctor</a></li>
+            <li><a target="_blank" href="https://moodings.com">Loft lampe Cajo cream tan E27 fra Broste Copenhagen 22x50 cm</a></li>
+            <li>Lampe fra Normann Copenhagen amp large guld/grøn</li>
+            <li>Hammershøi tekande Antracitgrå fra Kähler</li>
+            <li>Hammershøi Antracitgrå kopper fra Kähler</li>
+            <li>Sengetøj i bomuld</li>
+            <li>Bomuldslagen 180x200</li>
+            <li>Rejsegavekort/penge til rejse</li>
+            <li>Gavekort til Ilva til sofabord</li>
+            <li>Hammershøi tallerkner hvide store fra Kähler</li>
+            <li>Hammershøi tallerkner hvide små fra Kähler</li>
+            <li>Hammershøi tallerkner hvide små dybe fra Kähler</li>
+            <li><a target="_blank" href="https://www.google.dk/search?q=Weber%C2%AE+Q2000+gasgrill&tbm=shop">Gas grill til altan - Weber® Q2000 gasgrill</a></li>
+            <li>Tilbehør grill – Stativ, Grill børste, Grill beskyttelse cover, Gasbeholder</li>
+            <li>Lille træ med potte til altanen</li>
+            <li>Andre kreative ting</li>
+            <li>Oplevelsesgaver</li>
+        </ul>
+    </section>
+    
+    <section class="info">
+        <h1>Praktisk info</h1>
+    
+        Gavekoordinator:<br />
+        <a target="_blank" href="https://www.facebook.com/mariannebjergfelt.demant">Marianne Bjergfelt Demant</a><br />
+        <a href="mailto:demant@tdcadsl.dk">demant@tdcadsl.dk</a> / <a href="tel:40513232">40513232</a>        
+        <br /><br />
+    
+        Skriv gerne til toastmasteren,<br /> 
+        hvis I ønsker at lave et indslag:<br />
+        <a href="mailto:kaspersommer@sol.dk">kaspersommer@sol.dk</a> / <a href="tel:20592534">20592534</a>
+    </section>
+</div>
+
+<p class="thanksnote">Tak fordi du vil være med til at fejre os. vi glæder os til at se dig d. 17. marts 2018</p>
+
+
+<script>
+
+    function CountDownTimer(id) {
+        var end = new Date(2018, 3, 17, 13);
+
+        var _second = 1000;
+        var _minute = _second * 60;
+        var _hour = _minute * 60;
+        var _day = _hour * 24;
+        var timer;
+
+        function showRemaining() {
+            var now = new Date();
+            var distance = end - now;
+            if (distance < 0) {
+
+                clearInterval(timer);
+                document.getElementById(id).innerHTML = 'EXPIRED!';
+
+                return;
+            }
+            var days = Math.floor(distance / _day);
+            var hours = Math.floor((distance % _day) / _hour);
+            var minutes = Math.floor((distance % _hour) / _minute);
+            var seconds = Math.floor((distance % _minute) / _second);
+
+            document.getElementById(id).innerHTML =  '<strong>' + days + '</strong> dage ';
+            document.getElementById(id).innerHTML += '<strong>' + hours + '</strong> timer ';
+            document.getElementById(id).innerHTML += '<strong>' + minutes + '</strong> minutter ';
+            document.getElementById(id).innerHTML += '<strong>' + seconds + '</strong> sekunder ';
+        }
+
+        timer = setInterval(showRemaining, 1000);
+    }
+    
+    CountDownTimer('mobilecountdown');
+
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+
+<script>
+    jQuery('.countdown').FlipClock(new Date(2018, 3, 17, 13), {
+        countdown: true,
+        clockFace: 'DailyCounter',
+        language: 'danish',
+        minimumDigits: 2
+    });
+</script>
+
+</body>
+</html>
